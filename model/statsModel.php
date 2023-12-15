@@ -1,11 +1,10 @@
 <?php
-function selectStats($characterId) {
+function selectStatsWithCharacters() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT *
-                                FROM stats
-                                WHERE stats_char_id = ?");
-        $stmt->bind_param("i", $characterId);
+        $stmt = $conn->prepare("SELECT c.*, s.*
+                                FROM characters c
+                                LEFT JOIN stats s ON c.character_id = s.stats_char_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
