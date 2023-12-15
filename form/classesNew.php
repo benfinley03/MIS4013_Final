@@ -7,11 +7,11 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="newTypeModal" tabindex="-1" aria-labelledby="newTypeModalLabel" aria-hidden="true">
+<div class="modal fade" id="newClassesModal" tabindex="-1" aria-labelledby="newClassesModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="newTypeModalLabel">New Class</h1>
+        <h1 class="modal-title fs-5" id="newClassesModalLabel">New Class</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
