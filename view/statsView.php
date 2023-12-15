@@ -1,25 +1,23 @@
 <h1>Character Stats</h1>
 
-<?php while ($stat = $stats->fetch_assoc()) : ?>
-    <div class="card mb-4">
-        <div class="card-header">
-            <h5><?php echo $stat['name']; ?> - <?php echo $stat['class']; ?></h5>
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>Stats</h6>
-                    <ul>
-                        <li><strong>Strength:</strong> <?php echo $stat['strength']; ?></li>
-                        <li><strong>Dexterity:</strong> <?php echo $stat['dexterity']; ?></li>
-                        <li><strong>Constitution:</strong> <?php echo $stat['constitution']; ?></li>
-                        <li><strong>Intelligence:</strong> <?php echo $stat['intelligence']; ?></li>
-                        <li><strong>Wisdom:</strong> <?php echo $stat['wisdom']; ?></li>
-                        <li><strong>Charisma:</strong> <?php echo $stat['charisma']; ?></li>
-                    </ul>
-                </div>
+<!-- Display Stats -->
+<div class="stats">
+    <?php while ($char = $nameAndClass->fetch_assoc()) : ?>
+        <div class="card">
+            <div class="card-header">
+                <h2><?php echo $char['name']; ?></h2>
+                <p><?php echo $char['class']; ?></p>
+            </div>
+            <div class="card-body">
+                <?php while ($stat = $stats->fetch_assoc()) : ?>
+                    <p>Character ID: <?php echo $stat['stats_char_id']; ?></p>
+                    <p>Strength: <?php echo $stat['strength']; ?></p>
+                    <p>Dexterity: <?php echo $stat['dexterity']; ?></p>
+                    <p>Constitution: <?php echo $stat['constitution']; ?></p>
+                    <p>Intelligence: <?php echo $stat['intelligence']; ?></p>
+                    <p>Wisdom: <?php echo $stat['wisdom']; ?></p>
+                    <p>Charisma: <?php echo $stat['charisma']; ?></p>
             </div>
         </div>
-    </div>
-<?php endwhile; ?>
-
+    <?php endwhile; ?>
+</div>
