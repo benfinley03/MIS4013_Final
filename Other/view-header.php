@@ -7,6 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2nFgA5om8IbbVdJzazt+JX6p0a4U9Bp" crossorigin="anonymous">
 
+
+    <style>
+    .navbar-nav a {
+      transition: color 0.3s ease;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.9); }
+      100% { opacity: 0; transform: scale(0.5); }
+    }
+
+    body.navigating {
+      animation: fadeOut 0.5s ease forwards;
+    }
+  </style>
+
+
+    
 </head>
 <body>
     
