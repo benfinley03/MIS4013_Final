@@ -18,11 +18,7 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "<p>Intelligence: {$row['intelligence']}</p>";
     echo "<p>Wisdom: {$row['wisdom']}</p>";
     echo "<p>Charisma: {$row['charisma']}</p>";
-    echo "</div>";
-    echo "</div>";
-}
-
-echo  <form method="post" action="">
+    <form method="post" action="">
         <input type="hidden" name="stats_id" value="<?php echo $stats_id['stats_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <a href="#" class="btn btn-danger" onclick="if(confirm('Are you sure?')) { this.closest('form').submit(); }">
@@ -31,6 +27,10 @@ echo  <form method="post" action="">
             </svg>
         </a>
     </form>
+    echo "</div>";
+    echo "</div>";
+}
+
 
 ?>
 
