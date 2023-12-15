@@ -1,5 +1,5 @@
 <h1>Characters</h1>
-<?php include"/home/benfinmi/repositories/MIS4013_Final/form/charactersNew"; ?>
+<?php include "/home/benfinmi/repositories/MIS4013_Final/form/charactersNew"; ?>
 <div class="card-deck">
     <?php while ($character = $characters->fetch_assoc()) : ?>
         <div class="card mb-4">
