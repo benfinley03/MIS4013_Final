@@ -22,7 +22,7 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "</div>";
 }
 
- <form method="post" action="">
+echo  <form method="post" action="">
         <input type="hidden" name="stats_id" value="<?php echo $stats_id['stats_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <a href="#" class="btn btn-danger" onclick="if(confirm('Are you sure?')) { this.closest('form').submit(); }">
