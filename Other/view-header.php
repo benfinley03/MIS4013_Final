@@ -39,9 +39,9 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="/index.php" onclick="navigateTo('index.php')">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/controller/classesController.php" onclick="navigateTo('classesController.php')">Classes</a></li>
-                <li class="nav-item"><a class="nav-link" href="/controller/racesController.php" onclick="navigateTo('index.php')">Races</a></li>
-                <li class="nav-item"><a class="nav-link" href="/controller/charactersController.php" onclick="navigateTo('index.php')">Characters</a></li>                
-                <li class="nav-item"><a class="nav-link" href="/controller/statsController.php" onclick="navigateTo('index.php')">Character Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="/controller/racesController.php" onclick="navigateTo('racesController.php')">Races</a></li>
+                <li class="nav-item"><a class="nav-link" href="/controller/charactersController.php" onclick="navigateTo('charactersController.php')">Characters</a></li>                
+                <li class="nav-item"><a class="nav-link" href="/controller/statsController.php" onclick="navigateTo('statsController.php')">Character Stats</a></li>
 
             </ul>
         </div>
