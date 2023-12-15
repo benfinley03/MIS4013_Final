@@ -1,5 +1,4 @@
 <?php
-require_once("connection.php");
 function selectClasses() {
     try {
         $conn = get_db_connection();
