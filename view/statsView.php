@@ -1,28 +1,26 @@
-<h1>Character Stats</h1>
+<?php
+echo "<h1>Character Stats</h1>";
 
-<div class="stats">
-    <?php while ($char = $nameAndClass->fetch_assoc()) : ?>
-        <div class="card">
-            <div class="card-header">
-                <h2><?php echo $char['name']; ?></h2>
-                <p><?php echo $char['class']; ?></p>
-            </div>
-            <div class="card-body">
-                <?php
-                $charStats = selectStats($char['character_id']);
-                
-                while ($stat = $charStats->fetch_assoc()) :
-                ?>
-                    <p>Character ID: <?php echo $stat['stats_char_id']; ?></p>
-                    <p>Strength: <?php echo $stat['strength']; ?></p>
-                    <p>Dexterity: <?php echo $stat['dexterity']; ?></p>
-                    <p>Constitution: <?php echo $stat['constitution']; ?></p>
-                    <p>Intelligence: <?php echo $stat['intelligence']; ?></p>
-                    <p>Wisdom: <?php echo $stat['wisdom']; ?></p>
-                    <p>Charisma: <?php echo $stat['charisma']; ?></p>
-                <?php endwhile; ?>
-            </div>
-        </div>
-    <?php endwhile; ?>
-</div>
+// Assuming $statsAndCharacters is available from the controller
+while ($row = $statsAndCharacters->fetch_assoc()) {
+    $characterId = $row['character_id'];
 
+    echo "<div class='card'>";
+    echo "<div class='card-header'>";
+    echo "<h2>{$row['name']}</h2>";
+    echo "<p>{$row['class']}</p>";
+    echo "</div>";
+    echo "<div class='card-body'>";
+    echo "<p>Strength: {$row['strength']}</p>";
+    echo "<p>Dexterity: {$row['dexterity']}</p>";
+    echo "<p>Constitution: {$row['constitution']}</p>";
+    echo "<p>Intelligence: {$row['intelligence']}</p>";
+    echo "<p>Wisdom: {$row['wisdom']}</p>";
+    echo "<p>Charisma: {$row['charisma']}</p>";
+    // Add more stats as needed
+
+    echo "</div>";
+    echo "</div>";
+}
+
+?>
