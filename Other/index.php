@@ -1,9 +1,9 @@
 <?php
 $pageTitle = "Home";
-include "view-header.php";
+include "Other/view-header.php";
 ?>
 <h1>Welcome to the My Character Database</h1>
 <h4>Please feel free to add, edit, or delete the classes, races, characters, and stats available!</h4>
 <?php
-include "view-footer.php";
+include "Other/view-footer.php";
 ?>
