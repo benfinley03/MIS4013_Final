@@ -1,4 +1,4 @@
-<?php
+h<?php
 echo "<h1>Character Stats</h1>"; ?>
 <?php include "/home/benfinmi/repositories/MIS4013_Final/form/statsNew.php"; ?>
 
@@ -18,7 +18,7 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "<p>Intelligence: {$row['intelligence']}</p>";
     echo "<p>Wisdom: {$row['wisdom']}</p>";
     echo "<p>Charisma: {$row['charisma']}</p>";
-     <form method="post" action="">
+    echo <form method="post" action="">
         <input type="hidden" name="stats_id" value="<?php echo $statsAndCharacters['stats_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <a href="#" class="btn btn-danger" onclick="if(confirm('Are you sure?')) { this.closest('form').submit(); }">
