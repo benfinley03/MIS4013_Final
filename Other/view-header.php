@@ -17,9 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="/index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/controllers/classesController.php">Classes</a></li>
-                <li class="nav-item"><a class="nav-link" href="/controllers/racesController.php">Races</a></li>
-                <li class="nav-item"><a class="nav-link" href="/controllers/charactersController.php">Characters</a></li>
+                <li class="nav-item"><a class="nav-link" href="/controller/classesController.php">Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href="/controller/racesController.php">Races</a></li>
+                <li class="nav-item"><a class="nav-link" href="/controller/charactersController.php">Characters</a></li>
             </ul>
         </div>
     </div>
