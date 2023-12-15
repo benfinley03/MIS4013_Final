@@ -71,24 +71,23 @@ $classList = getClassList();
                         <input type="text" class="form-control" id="charName" name="charName">
                     </div>
                     <div class="mb-3">
-                        <label for="char_race_id" class="form-label">Character Race</label>
-                        <select class="form-select" id="char_race_id" name="char_race_id">
-                            <?php
-                            while ($raceItem = $raceList->fetch_assoc()) {
-                                echo '<option value="' . $raceItem['race_id'] . '">' . $raceItem['race'] . '</option>';
-                            }
-                            ?>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="char_class_id" class="form-label">Character Class</label>
-                        <select class="form-select" id="char_class_id" name="char_class_id">
-                            <?php
-                            while ($classItem = $classList->fetch_assoc()) {
-                                echo '<option value="' . $classItem['class_id'] . '">' . $classItem['class'] . '</option>';
-                            }
-                            ?>
-                        </select>
+                        <label for="char_race_id" class="form-label">Race</label>
+                            <select class="form-select" id="char_race_id" name="char_race_id">
+                                <?php
+                                while ($raceItem = $raceList->fetch_assoc()) {
+                                    echo '<option value="' . $raceItem['race_id'] . '">' . $raceItem['race'] . '</option>';
+                                }
+                                ?>
+                            </select>
+                            
+                            <label for="char_class_id" class="form-label">Class</label>
+                            <select class="form-select" id="char_class_id" name="char_class_id">
+                                <?php
+                                while ($classItem = $classList->fetch_assoc()) {
+                                    echo '<option value="' . $classItem['class_id'] . '">' . $classItem['class'] . '</option>';
+                                }
+                                ?>
+                            </select>
                     </div>
                     <div class="mb-3">
                         <label for="charLevel" class="form-label">Character Level</label>
