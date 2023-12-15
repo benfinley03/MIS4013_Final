@@ -8,7 +8,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php while ($class = $moves->fetch_assoc()) : ?>
+            <?php while ($class = $classes->fetch_assoc()) : ?>
                 <tr>
                     <td><?php echo $class['class_id']; ?></td>
                     <td><?php echo $class['class']; ?></td>
