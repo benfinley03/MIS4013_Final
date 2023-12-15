@@ -17,7 +17,7 @@ function selectStatsWithCharacters() {
 }
 
 
-function insertCharacterStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma) {
+function insertStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `character_stats` (`stats_char_id`, `hit_points`, `armor_class`, `strength`, `dexterity`, `constitution`, `intelligence`, `wisdom`, `charisma`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -31,7 +31,7 @@ function insertCharacterStats($stats_char_id, $hit_points, $armor_class, $streng
     }
 }
 
-function deleteCharacterStats($stats_id) {
+function deleteStats($stats_id) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM `stats` WHERE `stats_id` = ?");
