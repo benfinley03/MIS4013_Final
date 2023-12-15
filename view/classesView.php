@@ -1,4 +1,5 @@
 <h1>Classes</h1>
+<?php include "/home/benfinmi/repositories/MIS4013_Final/form/classesNew"; ?>
 <div class="table-responsive">
     <table class="table table-bordered table-hover">
         <thead class="thead-dark">
