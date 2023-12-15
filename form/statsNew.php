@@ -49,7 +49,38 @@ $noStats = getCharactersWithoutStats();
                             ?>
                         </select>
                     </div>
-                    <!-- Include other stat fields here -->
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hit_points" class="form-label">Hit Points</label>
+                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                    </div>
 
                     <input type="hidden" name="actionType" value="Add">
                     <button type="submit" class="btn btn-primary">Save</button>
