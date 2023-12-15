@@ -18,14 +18,14 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "<p>Intelligence: {$row['intelligence']}</p>";
     echo "<p>Wisdom: {$row['wisdom']}</p>";
     echo "<p>Charisma: {$row['charisma']}</p>";
-    echo <form method="post" action="">
-    <input type="hidden" name="stats_id" value="<?php echo $stats['stats_id']; ?>">
-    <input type="hidden" name="actionType" value="Delete">
-    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete?');">
+    echo <form method="post" action="">;
+    echo <input type="hidden" name="stats_id" value="<?php echo $stats['stats_id']; ?>">;
+    echo <input type="hidden" name="actionType" value="Delete">;
+    echo <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete?');">;
         Delete Stats
-    </button>
+    </button>;
+            
 </form>
-
     echo "</div>";
     echo "</div>";
 }
