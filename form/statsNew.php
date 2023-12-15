@@ -5,7 +5,7 @@ require_once("/home/benfinmi/repositories/MIS4013_Final/connection.php");
 function getCharactersWithoutStats() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT character_id, name FROM characters WHERE character_id NOT IN (SELECT character_id FROM character_stats)");
+        $stmt = $conn->prepare("SELECT character_id, name FROM characters WHERE character_id NOT IN (SELECT stats_char_id FROM stats)");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
