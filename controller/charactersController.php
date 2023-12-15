@@ -11,7 +11,6 @@ include "/home/benfinmi/repositories/MIS4013_Final/Other/view-footer.php";
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
-]
 
             if (insertCharacter($name, $char_race_id, $char_class_id, $level, $alignment, $background)) {
                 echo '<div class="alert alert-success" role="alert">Character Added.</div>';
