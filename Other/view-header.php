@@ -9,6 +9,16 @@
 
 
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('dnd_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
     .navbar-nav a {
       transition: color 0.3s ease;
     }
