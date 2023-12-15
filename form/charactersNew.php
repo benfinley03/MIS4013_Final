@@ -17,28 +17,25 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="pmPID" class="form-label">Pokemon</label>
+            <label for="character_id" class="form-label">Character</label>
 <?php
     $characterList = selectCharacterForInput();   
     include "/home/benfinmi/repositories/MIS4013_Final/form/charactersInputList.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="mID" class="form-label">Move ID</label>
-            <input type="integer" class="form-control" id="mID" name="mID">
+            <label for="level" class="form-label">Level</label>
+            <input type="integer" class="form-control" id="level" name="level">
           </div>
           <div class="mb-3">
-            <label for="mName" class="form-label">Move Name</label>
-            <input type="text" class="form-control" id="mName" name="mName">
+            <label for="alignment" class="form-label">Alignment</label>
+            <input type="text" class="form-control" id="alignment" name="alignment">
           </div>
         <div class="mb-3">
-            <label for="mPower" class="form-label">Move Power</label>
-            <input type="integer" class="form-control" id="mPower" name="mPower">
+            <label for="background" class="form-label">Background</label>
+            <input type="text" class="form-control" id="background" name="background">
           </div>
-          <div class="mb-3">
-            <label for="mAccuracy" class="form-label">Move Accuracy</label>
-            <input type="integer" class="form-control" id="mAccuracy" name="mAccuracy">
-          </div>
+
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
