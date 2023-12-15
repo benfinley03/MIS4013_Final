@@ -7,11 +7,11 @@
 
     <script>
     function navigateTo(page) {
-      document.body.style.opacity = 0;
+      document.body.classList.add('navigating');
 
       setTimeout(() => {
         window.location.href = page;
-      }, 300); 
+      }, 1000);
     }
   </script>
     
