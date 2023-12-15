@@ -1,4 +1,4 @@
-h<?php
+<?php
 echo "<h1>Character Stats</h1>"; ?>
 <?php include "/home/benfinmi/repositories/MIS4013_Final/form/statsNew.php"; ?>
 
