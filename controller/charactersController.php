@@ -11,6 +11,12 @@ include "/home/benfinmi/repositories/MIS4013_Final/Other/view-footer.php";
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
+            $name = $_POST['name'];
+            $char_race_id = $_POST['char_race_id'];
+            $char_class_id = $_POST['char_class_id'];
+            $level = $_POST['level'];
+            $alignment = $_POST['alignment'];
+            $background = $_POST['background'];
 
             if (insertCharacter($name, $char_race_id, $char_class_id, $level, $alignment, $background)) {
                 echo '<div class="alert alert-success" role="alert">Character Added.</div>';
@@ -19,6 +25,13 @@ if (isset($_POST['actionType'])) {
             }
             break;
         case "Edit":
+            $name = $_POST['name'];
+            $char_race_id = $_POST['char_race_id'];
+            $char_class_id = $_POST['char_class_id'];
+            $level = $_POST['level'];
+            $alignment = $_POST['alignment'];
+            $background = $_POST['background'];
+            $character_id = $_POST['character_id'];
 
             if (updateCharacter($name, $char_race_id, $char_class_id, $level, $alignment, $background, $character_id)) {
                 echo '<div class="alert alert-success" role="alert">Character Edited.</div>';
@@ -27,6 +40,7 @@ if (isset($_POST['actionType'])) {
             }
             break;
         case "Delete":
+            $character_id = $_POST['character_id'];
 
             if (deleteCharacter($character_id)) {
                 echo '<div class="alert alert-success" role="alert">Character Deleted.</div>';
