@@ -17,7 +17,6 @@ function selectCharacters() {
 }
 
 
-
 function insertCharacter($name, $char_race_id, $char_class_id, $level, $alignment, $background) {
     try {
         $conn = get_db_connection();
