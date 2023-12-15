@@ -15,4 +15,37 @@ function selectCharacters() {
         throw $e;
     }
 }
+
+
+
+function insertCharacter($name, $char_race_id, $char_class_id, $level, $alignment, $background) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `characters` (`name`, `char_race_id`, `char_class_id`, `level`, `alignment`, `background`) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("siiiss", $name, $char_race_id, $char_class_id, $level, $alignment, $background);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function deleteCharacter($character_id) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM `characters` WHERE `character_id` = ?");
+        $stmt->bind_param("i", $character_id);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
 ?>
