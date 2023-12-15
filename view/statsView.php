@@ -18,6 +18,7 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "<p>Intelligence: {$row['intelligence']}</p>";
     echo "<p>Wisdom: {$row['wisdom']}</p>";
     echo "<p>Charisma: {$row['charisma']}</p>";
+    echo include "/home/benfinmi/repositories/MIS4013_Final/form/statsDelete.php";
     echo "</div>";
     echo "</div>";
 }
