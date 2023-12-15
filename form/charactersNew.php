@@ -2,25 +2,52 @@
 require_once("/home/benfinmi/repositories/MIS4013_Final/connection.php");
 
 function getCharacterList() {
-    global $conn;
-    $query = "SELECT * FROM characters";
-    return $conn->query($query);
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT * FROM characters");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
 }
 
 function getRaceList() {
-    global $conn;
-    $query = "SELECT * FROM races";
-    return $conn->query($query);
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT * FROM races");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
 }
 
 function getClassList() {
-    global $conn;
-    $query = "SELECT * FROM classes";
-    return $conn->query($query);
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT * FROM classes");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
 }
+
+$charList = getCharacterList();
+$raceList = getRaceList();
+$classList = getClassList();
+
 ?>
-
-
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newCharacterModal">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
