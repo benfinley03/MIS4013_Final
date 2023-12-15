@@ -8,7 +8,6 @@ while ($row = $statsAndCharacters->fetch_assoc()) {
     echo "<div class='card'>";
     echo "<div class='card-header'>";
     echo "<h2>{$row['name']}</h2>";
-    echo "<p>Class: {$row['class']}</p>";
     echo "</div>";
     echo "<div class='card-body'>";
     echo "<p>Strength: {$row['strength']}</p>";
