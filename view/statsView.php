@@ -18,9 +18,6 @@
                         <li><strong>Charisma:</strong> <?php echo $stat['charisma']; ?></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <!-- Add more stats or information as needed -->
-                </div>
             </div>
         </div>
     </div>
