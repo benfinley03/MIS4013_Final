@@ -20,7 +20,7 @@
             <label for="pmPID" class="form-label">Pokemon</label>
 <?php
     $characterList = selectCharacterForInput();   
-    include ".php";
+    include "/home/benfinmi/repositories/MIS4013_Final/form/charactersInputList.php";
 ?>
           </div>
           <div class="mb-3">
