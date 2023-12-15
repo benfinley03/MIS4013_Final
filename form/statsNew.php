@@ -39,8 +39,8 @@ $noStats = getCharactersWithoutStats();
             <div class="modal-body">
                 <form method="post" action="">
                     <div class="mb-3">
-                        <label for="character_id" class="form-label">Character</label>
-                        <select class="form-select" id="character_id" name="character_id">
+                        <label for="stats_char_id" class="form-label">Character</label>
+                        <select class="form-select" id="stats_char_id" name="stats_char_id">
                             <?php
                             $charactersWithoutStats = getCharactersWithoutStats();
                             while ($charItem = $charactersWithoutStats->fetch_assoc()) {
