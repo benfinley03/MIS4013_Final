@@ -1,3 +1,4 @@
+<?php
 function selectStats($cid) {
     try {
         $conn = get_db_connection();
@@ -7,7 +8,7 @@ function selectStats($cid) {
                                 WHERE c.character_id = ?");
 
         $stmt->bind_param("i", $cid);
-        $stmt->execute();
+            $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
         return $result;
@@ -16,3 +17,4 @@ function selectStats($cid) {
         throw $e;
     }
 }
+?>
