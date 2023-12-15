@@ -1,5 +1,5 @@
 <?php
-function selectClasses() {
+function selectCharacters() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT c.character_id, c.name, r.race, cl.class, c.level, c.alignment, c.background
