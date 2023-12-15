@@ -1,7 +1,5 @@
-
-
 <?php
-// Assuming you have a database connection in $conn
+require_once("/home/benfinmi/repositories/MIS4013_Final/connection.php");
 
 function getCharacterList() {
     global $conn;
