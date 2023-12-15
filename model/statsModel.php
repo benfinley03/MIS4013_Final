@@ -4,12 +4,9 @@ function selectStats() {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT s.*, c.name, c.class 
                                 FROM stats s 
-                                    JOIN characters c ON s.stats_char_id = c.character_id");
+                                    JOIN characters c ON s.stats_char_id = c.character_id
+                                    JOIN classes cl ON c.char_class_id = cl.class_id");
 
-        if (!$stmt) {
-            die("Error in SQL query: " . $conn->error);
-        }
-        
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
