@@ -1,5 +1,5 @@
 <?php
-function selectStats($characterId) {
+function selectStats($cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT s.*, c.name, c.class 
@@ -7,7 +7,7 @@ function selectStats($characterId) {
                                     JOIN characters c ON s.stats_char_id = c.character_id 
                                 WHERE c.character_id = ?");
 
-        $stmt->bind_param("i", $characterId);
+        $stmt->bind_param("i", $cid);
             $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
