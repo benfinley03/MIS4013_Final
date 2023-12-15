@@ -1,5 +1,5 @@
 <?php
-function selectCharacterStats() {
+function selectStats() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT s.*, c.name, c.class
