@@ -67,8 +67,8 @@ $classList = getClassList();
             <div class="modal-body">
                 <form method="post" action="">
                     <div class="mb-3">
-                        <label for="charName" class="form-label">Character Name</label>
-                        <input type="text" class="form-control" id="charName" name="charName">
+                        <label for="name" class="form-label">Character Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
                         <label for="char_race_id" class="form-label">Race</label>
@@ -91,16 +91,16 @@ $classList = getClassList();
 
                     </div>
                     <div class="mb-3">
-                        <label for="charLevel" class="form-label">Character Level</label>
-                        <input type="number" class="form-control" id="charLevel" name="charLevel">
+                        <label for="level" class="form-label">Character Level</label>
+                        <input type="number" class="form-control" id="level" name="level">
                     </div>
                     <div class="mb-3">
-                        <label for="charAlignment" class="form-label">Character Alignment</label>
-                        <input type="text" class="form-control" id="charAlignment" name="charAlignment">
+                        <label for="alignment" class="form-label">Character Alignment</label>
+                        <input type="text" class="form-control" id="alignment" name="alignment">
                     </div>
                     <div class="mb-3">
-                        <label for="charBackground" class="form-label">Character Background</label>
-                        <input type="text" class="form-control" id="charBackground" name="charBackground">
+                        <label for="background" class="form-label">Character Background</label>
+                        <input type="text" class="form-control" id="background" name="background">
                     </div>
                     
                     <input type="hidden" name="actionType" value="Add">
