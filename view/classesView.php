@@ -1,13 +1,19 @@
-<!-- Inside classesView.php -->
-
-<h1>All Classes</h1>
-
-<?php if ($moves->num_rows > 0) : ?>
-    <ul>
-        <?php while ($row = $moves->fetch_assoc()) : ?>
-            <li><?php echo $row['class']; ?></li>
-        <?php endwhile; ?>
-    </ul>
-<?php else : ?>
-    <p>No classes available.</p>
-<?php endif; ?>
+<h1>Classes</h1>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while ($class = $moves->fetch_assoc()) : ?>
+                <tr>
+                    <td><?php echo $class['class_id']; ?></td>
+                    <td><?php echo $class['class']; ?></td>
+                </tr>
+            <?php endwhile; ?>
+        </tbody>
+    </table>
+</div>
