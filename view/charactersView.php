@@ -2,7 +2,6 @@
 <div class="card-deck">
     <?php while ($character = $characters->fetch_assoc()) : ?>
         <div class="card mb-4">
-            <img src="character_image.jpg" class="card-img-top" alt="Character Image">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $character['name']; ?></h5>
                 <p class="card-text">
