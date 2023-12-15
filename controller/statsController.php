@@ -5,7 +5,7 @@ require_once("/home/benfinmi/repositories/MIS4013_Final/model/charactersModel.ph
 require_once("/home/benfinmi/repositories/MIS4013_Final/Other/view-header.php");
 
 $pageTitle = "Character Stats";
-
+$chars = selectCharacters();
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
