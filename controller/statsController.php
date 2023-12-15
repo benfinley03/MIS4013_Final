@@ -27,7 +27,7 @@ if (isset($_POST['actionType'])) {
             $wisdom = $_POST['wisdom'];
             $charisma = $_POST['charisma'];
 
-            if (insertCharacterStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma)) {
+            if (insertStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma)) {
                 echo '<div class="alert alert-success" role="alert">Character Stats Added.</div>';
             } else {
                 echo '<div class="alert alert-danger" role="alert">Error</div>';
@@ -44,7 +44,7 @@ if (isset($_POST['actionType'])) {
             $wisdom = $_POST['wisdom'];
             $charisma = $_POST['charisma'];
 
-            if (updateCharacterStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma)) {
+            if (updateStats($stats_char_id, $hit_points, $armor_class, $strength, $dexterity, $constitution, $intelligence, $wisdom, $charisma)) {
                 echo '<div class="alert alert-success" role="alert">Character Stats Edited.</div>';
             } else {
                 echo '<div class="alert alert-danger" role="alert">Error</div>';
@@ -53,7 +53,7 @@ if (isset($_POST['actionType'])) {
         case "Delete":
             $stats_id = $_POST['stats_id'];
 
-            if (deleteCharacterStats($stats_id)) {
+            if (deleteStats($stats_id)) {
                 echo '<div class="alert alert-success" role="alert">Character Stats Deleted.</div>';
             } else {
                 echo '<div class="alert alert-danger" role="alert">Error</div>';
