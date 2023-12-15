@@ -1,5 +1,5 @@
 <h1>Races</h1>
-<?php include "/home/benfinmi/repositories/MIS4013_Final/form/racesNew"; ?>
+<?php include "/home/benfinmi/repositories/MIS4013_Final/form/racesNew.php"; ?>
 <div class="table-responsive">
     <table class="table table-bordered table-hover">
         <thead class="thead-dark">
