@@ -8,7 +8,7 @@ function selectStats($cid) {
                                 WHERE c.character_id = ?");
 
         $stmt->bind_param("i", $cid);
-            $stmt->execute();
+        $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
         return $result;
@@ -18,3 +18,4 @@ function selectStats($cid) {
     }
 }
 ?>
+
