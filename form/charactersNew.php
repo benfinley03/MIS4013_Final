@@ -102,16 +102,7 @@ $classList = getClassList();
                         <label for="charBackground" class="form-label">Character Background</label>
                         <input type="text" class="form-control" id="charBackground" name="charBackground">
                     </div>
-                    <div class="mb-3">
-                        <label for="character_id" class="form-label">Character</label>
-                        <select class="form-select" id="character_id" name="character_id">
-                            <?php
-                            while ($charItem = $charList->fetch_assoc()) {
-                                echo '<option value="' . $charItem['character_id'] . '">' . $charItem['name'] . '</option>';
-                            }
-                            ?>
-                        </select>
-                    </div>
+                    
                     <input type="hidden" name="actionType" value="Add">
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
