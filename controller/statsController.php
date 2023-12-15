@@ -43,10 +43,10 @@ if (isset($_POST['actionType'])) {
             }
             break;
         case "Delete":
-            $stats_id = $_POST['stats_id'];
+            $character_id = $_POST['character_id'];
 
-            if (deleteStats($stats_id)) {
-                echo '<div class="alert alert-success" role="alert">Character Stats Deleted.</div>';
+            if (deleteCharacter($character_id)) {
+                echo '<div class="alert alert-success" role="alert">Character Deleted.</div>';
             } else {
                 echo '<div class="alert alert-danger" role="alert">Error</div>';
             }
