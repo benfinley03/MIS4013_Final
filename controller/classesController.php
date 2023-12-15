@@ -1,5 +1,5 @@
 <?php
-require_once("Other/util-db.php");
+require_once("util-db.php");
 require_once("model/classesModel.php");
 $pageTitle = "Classes";
 include "Other/view-header.php";
