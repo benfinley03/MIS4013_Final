@@ -16,11 +16,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-        <a class="nav-link" href="controller/classesController.php">Classes</a>
-        <a class="nav-link" href="controller/racesController.php">Races</a>
-        <a class="nav-link" href="controller/charactersController.php">Characters</a>
-        <a class="nav-link" href="controller/statsController.php">Stats</a>
+        <a class="nav-link active" aria-current="page" href="/home/benfinmi/repositories/MIS4013_Final/index.php">Home</a>
+        <a class="nav-link" href="/home/benfinmi/repositories/MIS4013_Final/controller/classesController.php">Classes</a>
+        <a class="nav-link" href="/home/benfinmi/repositories/MIS4013_Final/controller/racesController.php">Races</a>
+        <a class="nav-link" href="/home/benfinmi/repositories/MIS4013_Final/controller/charactersController.php">Characters</a>
+        <a class="nav-link" href="/home/benfinmi/repositories/MIS4013_Final/controller/statsController.php">Stats</a>
 
       </div>
     </div>
