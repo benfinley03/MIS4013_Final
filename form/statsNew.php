@@ -51,35 +51,35 @@ $noStats = getCharactersWithoutStats();
                     </div>
                     <div class="mb-3">
                         <label for="hit_points" class="form-label">Hit Points</label>
-                        <input type="integer" class="form-control" id="hit_points" name="hit_points">
+                        <input type="number" class="form-control" id="hit_points" name="hit_points">
                     </div>
                     <div class="mb-3">
                         <label for="armor_class" class="form-label">Armor</label>
-                        <input type="integer" class="form-control" id="armor_class" name="armor_class">
+                        <input type="number" class="form-control" id="armor_class" name="armor_class">
                     </div>
                     <div class="mb-3">
                         <label for="strength" class="form-label">Strength</label>
-                        <input type="integer" class="form-control" id="strength" name="strength">
+                        <input type="number" class="form-control" id="strength" name="strength">
                     </div>
                     <div class="mb-3">
                         <label for="dexterity" class="form-label">Dexterity</label>
-                        <input type="integer" class="form-control" id="dexterity" name="dexterity">
+                        <input type="number" class="form-control" id="dexterity" name="dexterity">
                     </div>
                     <div class="mb-3">
                         <label for="constitution" class="form-label">Constitution</label>
-                        <input type="integer" class="form-control" id="constitution" name="constitution">
+                        <input type="number" class="form-control" id="constitution" name="constitution">
                     </div>
                     <div class="mb-3">
                         <label for="intelligence" class="form-label">Intelligence</label>
-                        <input type="integer" class="form-control" id="intelligence" name="intelligence">
+                        <input type="number" class="form-control" id="intelligence" name="intelligence">
                     </div>
                     <div class="mb-3">
                         <label for="wisdom" class="form-label">Wisdom</label>
-                        <input type="integer" class="form-control" id="wisdom" name="wisdom">
+                        <input type="number" class="form-control" id="wisdom" name="wisdom">
                     </div>
                     <div class="mb-3">
                         <label for="charisma" class="form-label">Charisma</label>
-                        <input type="integer" class="form-control" id="charisma" name="charisma">
+                        <input type="number" class="form-control" id="charisma" name="charisma">
                     </div>
 
                     <input type="hidden" name="actionType" value="Add">
