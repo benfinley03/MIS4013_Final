@@ -1,8 +1,8 @@
 <?php
-echo "<h1>Character Stats</h1>";
+echo "<h1>Character Stats</h1>"; ?>
 <?php include "/home/benfinmi/repositories/MIS4013_Final/form/statsNew.php"; ?>
 
-
+<?php
 // Assuming $statsAndCharacters is available from the controller
 while ($row = $statsAndCharacters->fetch_assoc()) {
     $characterId = $row['character_id'];
