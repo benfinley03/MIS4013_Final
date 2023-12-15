@@ -1,11 +1,9 @@
 <?php
 require_once("/home/benfinmi/repositories/MIS4013_Final/connection.php");
 require_once("/home/benfinmi/repositories/MIS4013_Final/model/statsModel.php");
-require_once("/home/benfinmi/repositories/MIS4013_Final/model/charactersModel.php");
 require_once("/home/benfinmi/repositories/MIS4013_Final/Other/view-header.php");
 
 $pageTitle = "Character Stats";
-$chars = selectCharacters();
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
@@ -43,9 +41,9 @@ if (isset($_POST['actionType'])) {
             }
             break;
         case "Delete":
-            $character_id = $_POST['character_id'];
+            $stats_id = $_POST['stats_id'];
 
-            if (deleteCharacter($character_id)) {
+            if (deleteCharacter($stats_id)) {
                 echo '<div class="alert alert-success" role="alert">Character Deleted.</div>';
             } else {
                 echo '<div class="alert alert-danger" role="alert">Error</div>';
