@@ -13,7 +13,7 @@
                 </p>
                 
     <form method="post" action="">
-        <input type="hidden" name="race_id" value="<?php echo $race['race_id']; ?>">
+        <input type="hidden" name="character_id" value="<?php echo $character['character_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <a href="#" class="btn btn-danger" onclick="if(confirm('Are you sure?')) { this.closest('form').submit(); }">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
