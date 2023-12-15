@@ -1,3 +1,28 @@
+
+
+<?php
+// Assuming you have a database connection in $conn
+
+function getCharacterList() {
+    global $conn;
+    $query = "SELECT * FROM characters";
+    return $conn->query($query);
+}
+
+function getRaceList() {
+    global $conn;
+    $query = "SELECT * FROM races";
+    return $conn->query($query);
+}
+
+function getClassList() {
+    global $conn;
+    $query = "SELECT * FROM classes";
+    return $conn->query($query);
+}
+?>
+
+
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newCharacterModal">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
