@@ -1,11 +1,9 @@
 <?php
-function selectStats($characterId) {
+function selectStats() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT *
-                                FROM stats
-                                WHERE stats_char_id = ?");
-        $stmt->bind_param("i", $characterId);
+                                FROM stats");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
